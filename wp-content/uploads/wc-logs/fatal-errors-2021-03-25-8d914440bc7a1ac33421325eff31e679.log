@@ -1,0 +1,151 @@
+2021-03-25T10:44:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_subcategory_thumbnail(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 19 and exactly 1 expected in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php:2555
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(19): woocommerce_subcategory_thumbnail()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(23): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 2555
+
+2021-03-25T11:30:59+00:00 CRITICAL Cannot redeclare woocommerce_taxonomy_archive_description() (previously declared in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php:1233) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 16
+
+2021-03-25T11:49:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function myFunction(), 1 passed in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php on line 294 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:226
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(294): myFunction(75)
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\post.php(4384): do_action('save_post', 75, Object(WP_Post), false)
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\post.php(690): wp_insert_post(Array, false, false)
+#5 C:\xampp\htdocs\wordpress_theam\wp-admin\post-new.php(66): get_default_post_to_edit('post', true)
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 226
+
+2021-03-25T11:49:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function myFunction(), 1 passed in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php on line 294 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:226
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(294): myFunction(76)
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\post.php(4384): do_action('save_post', 76, Object(WP_Post), false)
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\post.php(690): wp_insert_post(Array, false, false)
+#5 C:\xampp\htdocs\wordpress_theam\wp-admin\post-new.php(66): get_default_post_to_edit('post', true)
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 226
+
+2021-03-25T12:26:33+00:00 CRITICAL syntax error, unexpected token "=>", expecting ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 228
+
+2021-03-25T12:26:54+00:00 CRITICAL syntax error, unexpected token "=>", expecting ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 228
+
+2021-03-25T12:26:56+00:00 CRITICAL syntax error, unexpected token "=>", expecting ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 228
+
+2021-03-25T12:27:30+00:00 CRITICAL syntax error, unexpected token "=>", expecting ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 228
+
+2021-03-25T12:38:16+00:00 CRITICAL Uncaught Error: Call to undefined function send_mail_to_user() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php:6
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php on line 6
+
+2021-03-25T12:38:38+00:00 CRITICAL Uncaught Error: Call to undefined function send_mail_to_user() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php:6
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php on line 6
+
+2021-03-25T12:38:41+00:00 CRITICAL Uncaught Error: Call to undefined function send_mail_to_user() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php:6
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php on line 6
+
+2021-03-25T12:38:52+00:00 CRITICAL Uncaught Error: Call to undefined function send_mail_to_user() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php:6
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php on line 6
+
+2021-03-25T15:33:50+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 2438
+
+2021-03-25T15:37:52+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:490
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 490
+
+2021-03-25T15:59:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_price() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:515
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 515
+
+2021-03-25T15:59:32+00:00 CRITICAL Uncaught Error: Call to undefined function the_price() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:515
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 515
+
+2021-03-25T16:03:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:515
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 515
+

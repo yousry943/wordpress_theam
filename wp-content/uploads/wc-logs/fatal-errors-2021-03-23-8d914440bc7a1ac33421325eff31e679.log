@@ -1,0 +1,6 @@
+2021-03-23T15:19:20+00:00 CRITICAL Cannot redeclare flipmart_woocommerce_result_count() (previously declared in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:85) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 91
+
+2021-03-23T15:57:13+00:00 CRITICAL syntax error, unexpected token ";" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 153
+
+2021-03-23T15:57:20+00:00 CRITICAL syntax error, unexpected token ";" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 153
+

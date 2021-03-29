@@ -1,0 +1,557 @@
+2021-03-28T09:44:15+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1565
+
+2021-03-28T09:44:29+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1565
+
+2021-03-28T11:16:44+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1625
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1625
+
+2021-03-28T11:16:55+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1625
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1625
+
+2021-03-28T11:17:34+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1625
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1625
+
+2021-03-28T11:17:37+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1625
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1625
+
+2021-03-28T12:53:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function modify_woocommerce_get_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 116 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:275
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(116): modify_woocommerce_get_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 275
+
+2021-03-28T12:55:02+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:55:11+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:56:07+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\single-product.php(37): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:56:36+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\single-product.php(37): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:56:39+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\single-product.php(37): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:57:49+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#21 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#22 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#24 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T12:59:14+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(38): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T13:00:38+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string - string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\single-product.php(37): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T13:51:44+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Grouped::regular_price() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): modify_woocommerce_get_price_html('<span class="wo...', Object(WC_Product_Grouped))
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters('<span class="wo...', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-product-grouped.php(128): apply_filters('woocommerce_get...', '<span class="wo...', Object(WC_Product_Grouped))
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\content-widget-product.php(40): WC_Product_Grouped->get_price_html()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-products.php(202): wc_get_template('content-widget-...', Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(380): WC_Widget_Products->widget(Array, Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(823): WP_Widget->display_callback(Array, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\sidebar.php(18): dynamic_sidebar('lift-sidebar')
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\templates\global\sidebar.php(22): get_sidebar('shop')
+#13 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1033): wc_get_template('global/sidebar....')
+#15 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): woocommerce_get_sidebar('')
+#16 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\single-product.php(37): do_action('woocommerce_sid...')
+#19 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T14:20:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_displayed_sale_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 48 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(48): change_displayed_sale_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T14:21:04+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_displayed_sale_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 48 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(48): change_displayed_sale_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T14:21:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_displayed_sale_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 48 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(48): change_displayed_sale_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T14:22:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_displayed_sale_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 48 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:276
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(48): change_displayed_sale_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 276
+
+2021-03-28T14:22:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_displayed_sale_price_html(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 48 and exactly 2 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:276
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(48): change_displayed_sale_price_html()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 276
+
+2021-03-28T14:25:14+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:303
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(41): bbloomer_show_sale_percentage_loop()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 303
+
+2021-03-28T14:25:30+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:303
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(41): bbloomer_show_sale_percentage_loop()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 303
+
+2021-03-28T14:26:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function adventure_tours_render_tour_booking_form(), 0 passed in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 43 and exactly 1 expected in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:275
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(43): adventure_tours_render_tour_booking_form()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 275
+
+2021-03-28T14:53:21+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:47
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 47
+
+2021-03-28T14:58:04+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:43
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 43
+
+2021-03-28T15:02:20+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:43
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 43
+
+2021-03-28T15:03:58+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(42): the_dramatist_price_show()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 278
+
+2021-03-28T15:05:13+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product::regular_price() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:43
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 43
+
+2021-03-28T15:06:10+00:00 CRITICAL Uncaught Error: Call to a member function get_available_variations() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 42
+
+2021-03-28T15:23:21+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:280
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(42): ts_custom_price()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 280
+
+2021-03-28T15:23:52+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:280
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(42): ts_custom_price()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 280
+
+2021-03-28T15:23:56+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:280
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(42): ts_custom_price()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 280
+
+2021-03-28T15:29:57+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:54
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 54
+
+2021-03-28T15:31:32+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:50
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 50
+
+2021-03-28T15:35:37+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:52
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 52
+
+2021-03-28T15:37:56+00:00 CRITICAL Unclosed '{' on line 52 in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 753
+
+2021-03-28T15:47:50+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-product-functions.php:963
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php(82): wc_get_price_including_tax(NULL)
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 963
+

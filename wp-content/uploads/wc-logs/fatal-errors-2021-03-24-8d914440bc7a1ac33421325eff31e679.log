@@ -1,0 +1,33 @@
+2021-03-24T08:40:08+00:00 CRITICAL Unclosed '{' on line 141 in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 149
+
+2021-03-24T08:41:16+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, class "VG_Sort" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(212): WP_Hook->apply_filters(12, Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-query.php(484): apply_filters('loop_shop_per_p...', 12)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\woocommerce\includes\class-wc-query.php(370): WC_Query->product_query(Object(WP_Query))
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): WC_Query->pre_get_posts(Object(WP_Query))
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(551): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp.php(752): WP->query_posts()
+#10 C:\xampp\htdocs\wordpress_theam\wp-includes\functions.php(1291): WP->main('')
+#11 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(16): wp()
+#12 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php on line 292
+
+2021-03-24T08:43:01+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, class "VG_Sort" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\woocommerce\archive-product.php(107): do_action('woocommerce_bef...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php on line 292
+
+2021-03-24T08:51:12+00:00 CRITICAL syntax error, unexpected token "," in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 145
+

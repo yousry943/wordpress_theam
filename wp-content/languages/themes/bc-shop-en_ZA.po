@@ -1,0 +1,232 @@
+# Translation of Themes - BC Shop in English (South Africa)
+# This file is distributed under the same license as the Themes - BC Shop package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-12 18:29:22+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: en_ZA\n"
+"Project-Id-Version: Themes - BC Shop\n"
+
+#. Description of the theme
+msgid "BCSHOP is WooCommerce child theme of BC Business Consulting . It's perfect for  E-commerce websites of any store type such as online bookstore, electronic store, apparel & clothing store, fashion store, sport & athletic goods store, handbags & feminine products store, cosmetics & saloon item shop, jewelry & luxury item store and various multipurpose online stores. The modern design and smooth coding standard make them perfect for business, corporate, companies and freelancers.We also utilize best and clean coding standard that functions well with the latest WordPress version. This Free customizable responsive Woo-commerce WordPress theme includes plenty of customization options that are fairly easy to use. You can easily customize them, using the short codes and hook. BCSHOP is the best choice for building online store since it's fully compatible with WooCommerce, the most popular ecommerce plugin. Using Elementor page builder plugin, you could simply edit your site using just drag & drop."
+msgstr "BCSHOP is WooCommerce child theme of BC Business Consulting . It's perfect for  ecommerce websites of any store type such as online bookstore, electronic store, apparel & clothing store, fashion store, sport & athletic goods store, handbags & feminine products store, cosmetics & salon item shop, jewellery & luxury item store and various multipurpose online stores. The modern design and smooth coding standard make them perfect for business, corporate, companies and freelancers. We also utilise best and clean coding standard that functions well with the latest WordPress version. This Free customisable responsive WooCommerce WordPress theme includes plenty of customisation options that are fairly easy to use. You can easily customise them, using the short codes and hook. BCSHOP is the best choice for building online store since it's fully compatible with WooCommerce, the most popular ecommerce plugin. Using Elementor page builder plugin, you could simply edit your site using just drag & drop."
+
+#. Theme Name of the theme
+msgid "BC Shop"
+msgstr "BC Shop"
+
+#. translators:straing
+#: woocommerce/single-product/rating.php:39
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] "%s customer review"
+msgstr[1] "%s customer reviews"
+
+#: woocommerce/result-count.php:63
+msgid "All"
+msgstr "All"
+
+#: woocommerce/result-count.php:60
+msgid "View:"
+msgstr "View:"
+
+#: woocommerce/checkout/form-login.php:37
+msgid "If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section."
+msgstr "If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section."
+
+#: woocommerce/checkout/form-login.php:32
+msgid "Click here to login"
+msgstr "Click here to login"
+
+#: woocommerce/checkout/form-login.php:31
+msgid "Returning customer?"
+msgstr "Returning customer?"
+
+#: woocommerce/checkout/form-coupon.php:32
+msgid "Click here to enter your code"
+msgstr "Click here to enter your code"
+
+#: woocommerce/checkout/form-coupon.php:32
+msgid "Have a coupon?"
+msgstr "Have a coupon?"
+
+#: woocommerce/checkout/form-checkout.php:61
+msgid "Your order"
+msgstr "Your order"
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr "You must be logged in to checkout."
+
+#: woocommerce/cart/cart.php:148
+msgid "Update cart"
+msgstr "Update basket"
+
+#: woocommerce/cart/cart.php:140 woocommerce/checkout/form-coupon.php:44
+msgid "Apply coupon"
+msgstr "Apply coupon"
+
+#: woocommerce/cart/cart.php:139 woocommerce/checkout/form-coupon.php:40
+msgid "Coupon code"
+msgstr "Coupon code"
+
+#: woocommerce/cart/cart.php:117
+msgid "Remove this item"
+msgstr "Remove this item"
+
+#: woocommerce/cart/cart.php:79
+msgid "Available on backorder"
+msgstr "Available on backorder"
+
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:89
+msgid "Quantity"
+msgstr "Quantity"
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:83
+msgid "Price"
+msgstr "Price"
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:67
+msgid "Product"
+msgstr "Product"
+
+#: woocommerce/cart/cart-totals.php:85 woocommerce/cart/cart-totals.php:86
+#: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:105
+msgid "Total"
+msgstr "Total"
+
+#. translators:straing
+#: woocommerce/cart/cart-totals.php:64
+msgid "estimated for %s"
+msgstr "estimated for %s"
+
+#: woocommerce/cart/cart-totals.php:33 woocommerce/cart/cart-totals.php:34
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: woocommerce/cart/cart-totals.php:28
+msgid "Cart Totals"
+msgstr "Basket Totals"
+
+#: inc/woocommerce.php:251
+msgid "Read more"
+msgstr "Read more"
+
+#: inc/shop-toolbar.php:35
+msgid "List view"
+msgstr "List view"
+
+#: inc/shop-toolbar.php:34
+msgid "Grid view"
+msgstr "Grid view"
+
+#: inc/helper.php:213
+msgid "Your review"
+msgstr "Your review"
+
+#: inc/helper.php:208
+msgid "Very poor"
+msgstr "Very poor"
+
+#: inc/helper.php:207
+msgid "Not that bad"
+msgstr "Not that bad"
+
+#: inc/helper.php:206
+msgid "Average"
+msgstr "Average"
+
+#: inc/helper.php:205
+msgid "Good"
+msgstr "Good"
+
+#: inc/helper.php:204
+msgid "Perfect"
+msgstr "Perfect"
+
+#: inc/helper.php:203
+msgid "Rate&hellip;"
+msgstr "Rate&hellip;"
+
+#: inc/helper.php:202
+msgid "Your rating"
+msgstr "Your rating"
+
+#. translators:straing
+#: inc/helper.php:198
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr "You must be <a href=\"%s\">logged in</a> to post a review."
+
+#: inc/helper.php:188
+msgid "Submit Review "
+msgstr "Submit Review "
+
+#: inc/helper.php:183
+msgid "Your Email"
+msgstr "Your Email"
+
+#: inc/helper.php:180
+msgid "Your Name"
+msgstr "Your Name"
+
+#. translators:straing
+#: inc/helper.php:174
+msgid "Leave a Reply to %s"
+msgstr "Leave a Reply to %s"
+
+#. translators:straing
+#: inc/helper.php:173
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Be the first to review &ldquo;%s&rdquo;"
+
+#. translators:straing
+#: inc/helper.php:173
+msgid "Add a review"
+msgstr "Add a review"
+
+#: inc/helper.php:154
+msgid "404 Error"
+msgstr "404 Error"
+
+#. translators:straing
+#: inc/helper.php:150
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#. Author of the theme
+#. translators:straing
+#: inc/helper.php:42
+msgid "aThemeArt"
+msgstr "aThemeArt"
+
+#. translators:straing
+#: inc/helper.php:42
+msgid "https://athemeart.com"
+msgstr "https://athemeart.com"
+
+#. translators:straing
+#: inc/helper.php:42
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#. translators:straing
+#: inc/helper.php:39
+msgid "Proudly powered by %s ."
+msgstr "Proudly powered by %s ."
+
+#. translators:straing
+#: inc/helper.php:39
+msgid "https://wordpress.org/"
+msgstr "https://en-za.wordpress.org/"
+
+#. Author URI of the theme
+msgid "https://athemeart.com/"
+msgstr "https://athemeart.com/"
+
+#. Theme URI of the theme
+msgid "https://athemeart.com/downloads/bc-shop/"
+msgstr "https://athemeart.com/downloads/bc-shop/"

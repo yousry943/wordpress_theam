@@ -1,0 +1,390 @@
+/**
+ * CSS code for all open mart Extensions admin screens
+ *
+ * @package open mart
+ * @since 1.0.0
+ */
+
+.big-store-clear:before, .big-store-clear:after {
+	content: " ";
+	display: table;
+}
+.big-store-clear:after {
+	clear: both;
+}
+
+/**
+ * Error Message
+ */
+#message {
+    display: block;
+    margin-left: 0;
+}
+/*Home Page Settings */
+
+li#accordion-section-section_default_home h3 {
+    background: #a5a7ad !important;
+    color: #fff !important;
+}
+.button-large.flactvate{ display:none; }
+
+.flactvate-activating{
+  color:#f7a205;
+  margin-top: 15px;
+  display:none;
+  float: right;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #1b619d;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+    float: right;
+    margin-top: 10px;
+    display: none;
+      margin-left:5px;
+
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/**
+ * CSS code for all open mart Extensions admin screens
+ *
+ * @package open mart
+ * @since 1.2.4
+ */
+/**
+ * open mart Welcome Page
+ */
+.appearance_page_big-store #wpcontent{
+ 	padding: 0;
+ }
+.big-store-menu-page-wrapper.wrap{
+	margin: 0;
+}
+.big-store-menu-page-wrapper .big-store-normal-cusror a{
+	text-decoration: none;
+    font-weight:500;
+    color: #fff;
+    font-size: 14px
+}
+.big-store-theme-page-header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.big-store-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.big-store-container .big-store-normal-cusror.hndle{
+    cursor: initial;
+}
+.big-store-container .postbox .hndle {
+    background: #f9f9f9;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+/* Top Right Links. */
+.big-store-top-links {
+    flex: auto;
+    text-align: right;
+}
+
+.big-store-top-links ul{
+    margin: 0;
+}
+.big-store-top-links ul li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.big-store-quick-setting-section span.dashicons {
+    margin: 1px 3px 0 10px;
+}
+.big-store-container div.notice,
+.big-store-container div.updated,
+.big-store-container div.error{
+	margin-top: 0;
+}
+.big-store-container #poststuff h2{
+	padding: 10px 12px;
+}
+.big-store-container img.big-store-starter-sites-img {
+    width: 100%;
+}
+.big-store-flex{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.big-store-theme-title {
+    align-content: flex-start;
+    text-align: left;
+}
+.big-store-theme-title .big-store-theme-version {
+    border-radius: 3px;
+    font-size:  0.5em;
+    font-weight:  400;
+    padding: 2px 7px;
+}
+.big-store-theme-title a {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    margin: 0 auto;
+}
+.big-store-theme-title a,
+.big-store-theme-title span{
+	font-size: 1.5rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.big-store-theme-icon{
+	width: 60px;
+    vertical-align: bottom;
+}
+.big-store-theme-title,.ast-top-links{
+width:100%;
+margin-bottom:10px;
+}
+.big-store-top-links {
+    flex: auto;
+    text-align: center;
+}
+.big-store-theme-page-header {
+    background-color: #FFDD4D;
+}
+.big-store-theme-title a:focus,.big-store-theme-title a:focus-within{
+outline:0;
+box-shadow:none;
+}
+.big-store-menu-page-wrapper .big-store-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        align-items: flex-start;
+}
+.big-store-menu-page-wrapper .big-store-content .postbox{
+  width:48%;
+} 
+.big-store-container .rcp{
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.big-store-container .rcp img{
+    float: left;
+    display: block;
+    margin-right:10px;
+    width:17%;
+}
+.big-store-container .rcp p{
+margin: 10px 0px;
+}
+.big-store-container .rcp:last-child{
+border-bottom:0px;
+}
+/**
+ * open mart Quick Settings
+ */
+ .big-store-quick-setting-section ul,
+ .big-store-addon-list-section ul{
+ 	margin: 0;
+ }
+.big-store-quick-setting-section li{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 0;
+}
+.big-store-addon-list-section li{
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 0;
+}
+.big-store-quick-setting-section li{
+    padding: 10px 0;
+}
+.big-store-quick-setting-section li:nth-child(odd){
+    width: 50%;
+}
+.big-store-quick-setting-section li:nth-child(even){
+    width: 50%;
+}
+.big-store-quick-setting-section li a{
+	margin: 5px;
+	display: inline-block;
+}
+.big-store-addon-list-section li{
+	padding: 10px 15px;
+}
+.big-store-quick-setting-section a.ast-quick-setting-title{
+	flex: auto;
+}
+
+.big-store-addon-list-section .big-store-addon-list li {
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 10px 15px; 
+}
+
+.big-store-addon-list-section .big-store-addon-list li:nth-child(even){
+    background-color: #fbfbfb;
+}
+
+.big-store-addon-link-wrapper{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex: auto;
+}
+.big-store-addon-link-wrapper a{
+    line-height: 1.6;
+}
+.big-store-addon-link-wrapper a:nth-child(even){
+    margin: 0 10px;
+}
+
+/**
+ * big-store Welcome screen sidebar
+ */
+.ast-sidebar .hndle .dashicons{
+	margin: 0 5px 0 0;
+}
+
+@media (max-width: 544px){
+	.big-store-quick-setting-section li{
+		width: 100%;
+	}
+}
+
+/**
+ * big-store Custom Notice for static position
+ */
+.brv-notice{
+    margin-bottom: 20px;
+}
+.ast-notice.ast-notice-error{
+    border-left-color: #dc3232;
+}
+
+.ast-notice{
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    padding: 1px 12px;
+}
+.ast-notice p{
+    margin: 0.5em 0;
+    padding: 2px;
+}
+
+.big-store-menu-page-wrapper .big-store-content .postbox.big-store-recommend-plugins,
+.big-store-menu-page-wrapper .big-store-content .postbox.big-store-useful-plugins{
+width:100%;
+}
+.big-store-container .postbox.big-store-recommend-plugins .rcp,
+.big-store-container .postbox.big-store-useful-plugins .rcp {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.big-store-container .postbox.big-store-recommend-plugins .rcp:nth-child(3n+3),
+.big-store-container .postbox.big-store-useful-plugins .rcp:nth-child(3n+3){
+
+margin-right:0;
+}
+
+.big-store-container .postbox.big-store-recommend-plugins .rcp:nth-child(4),
+.big-store-container .postbox.big-store-useful-plugins .rcp:nth-child(4){
+clear:both;
+}
+.big-store-container .postbox .inside {
+    margin: 15px 0!important;
+    position: relative;
+}
+.big-store-container .postbox.big-store-recommend-plugins .rcp:nth-child(7),
+.big-store-container .postbox.big-store-useful-plugins .rcp:nth-child(7){
+clear:both;
+}
+.big-store-useful-plugins .inside{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs-list a{
+    display: inline-block;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+}
+.tabs-list a{
+    background: #eaeaea;
+}
+.tabs-list a.active{
+    background: #FFF;
+}
