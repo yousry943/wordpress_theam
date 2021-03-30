@@ -1,0 +1,24 @@
+2021-03-30T09:42:52+00:00 CRITICAL Uncaught Error: Call to undefined function wp_star_rating() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:98
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 98
+
+2021-03-30T09:44:43+00:00 CRITICAL Uncaught Error: Call to undefined function the_ratings_results() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php:98
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(732): require()
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php(24): get_template_part('left-sidebar')
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\left-sidebar.php on line 98
+
