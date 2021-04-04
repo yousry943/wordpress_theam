@@ -6,7 +6,7 @@ add_theme_support('title-tage');
 function flipmart_enqueue_scripts()
 {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0');
-    wp_enqueue_style('Main', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0'); 
+    wp_enqueue_style('Main', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0');
     wp_enqueue_style('blue', get_template_directory_uri() . '/assets/css/blue.css', array(), '1.0');
     wp_enqueue_style('owl.carousel', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), '1.0');
     wp_enqueue_style('owl.carousel', get_template_directory_uri() . '/assets/css/owl.transitions.css', array(), '1.0');
@@ -14,14 +14,14 @@ function flipmart_enqueue_scripts()
     wp_enqueue_style('rateit', get_template_directory_uri() . '/assets/css/rateit.css', array(), '1.0');
     wp_enqueue_style('rateit', get_template_directory_uri() . '/assets/css/bootstrap-select.min.css', array(), '1.0');
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), '1.0');
-    wp_enqueue_style('core', get_template_directory_uri() . '/style.css', false); 
-    
+    wp_enqueue_style('core', get_template_directory_uri() . '/style.css', false);
+
     //Theam stylesheet
 
     //add js files 
-    
+
     wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-1.11.1.min.js', array(), '1.0.0', true);
-    wp_enqueue_script('bootstrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.0.0' ,true);
+    wp_enqueue_script('bootstrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.0.0', true);
     wp_enqueue_script('bootstrap-hover-dropdown', get_template_directory_uri() . '/assets/js/bootstrap-hover-dropdown.min.js', array(), '1.0.0', true);
     wp_enqueue_script('owl.carousel.min', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), '1.0.0', true);
     wp_enqueue_script('echo.min', get_template_directory_uri() . '/assets/js/echo.min.js', array(), '1.0.0', true);
@@ -32,12 +32,8 @@ function flipmart_enqueue_scripts()
     wp_enqueue_script('bootstrap-select.min', get_template_directory_uri() . '/assets/js/bootstrap-select.min.js', array(), '1.0.0', true);
     wp_enqueue_script('wow.min', get_template_directory_uri() . '/assets/js/wow.min.js', array(), '1.0.0', true);
     wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), '1.0.0', true);
-
-    
-
-    
 }
-add_action('wp_enqueue_scripts','flipmart_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'flipmart_enqueue_scripts');
 //WoowCommerce Theam Support  
 
 
@@ -147,7 +143,7 @@ function flipmart_selectbox()
     echo '<div class="woocommerce-perpage">';
     echo '<select onchange="if (this.value) window.location.href=this.value">';
     $orderby_options = array(
-        '9' => '9', 
+        '9' => '9',
         '300' => 'All'
     );
     foreach ($orderby_options as $value => $label) {
@@ -232,29 +228,29 @@ function big_store_product_list_categories($args = '')
         $exclude_id = '';
     }
     $defaults = array(
-            'child_of'            => 0,
-            'current_category'    => 0,
-            'depth'               => 5,
-            'echo'                => 0,
-            'exclude'             => $exclude_id,
-            'exclude_tree'        => '',
-            'feed'                => '',
-            'feed_image'          => '',
-            'feed_type'           => '',
-            'hide_empty'          => 1,
-            'hide_title_if_empty' => false,
-            'hierarchical'        => true,
-            'order'               => 'ASC',
-            'orderby'             => 'menu_order',
-            'separator'           => '<br />',
-            'show_count'          => 0,
-            'show_option_all'     => '',
-            'show_option_none'    => __('No categories', 'big-store'),
-            'style'               => 'list',
-            'taxonomy'            => 'product_cat',
-            'title_li'            => '',
-            'use_desc_for_title'  => 0,
-        );
+        'child_of'            => 0,
+        'current_category'    => 0,
+        'depth'               => 5,
+        'echo'                => 0,
+        'exclude'             => $exclude_id,
+        'exclude_tree'        => '',
+        'feed'                => '',
+        'feed_image'          => '',
+        'feed_type'           => '',
+        'hide_empty'          => 1,
+        'hide_title_if_empty' => false,
+        'hierarchical'        => true,
+        'order'               => 'ASC',
+        'orderby'             => 'menu_order',
+        'separator'           => '<br />',
+        'show_count'          => 0,
+        'show_option_all'     => '',
+        'show_option_none'    => __('No categories', 'big-store'),
+        'style'               => 'list',
+        'taxonomy'            => 'product_cat',
+        'title_li'            => '',
+        'use_desc_for_title'  => 0,
+    );
     $html = wp_list_categories($defaults);
 
 
@@ -317,3 +313,144 @@ function custom_bootstrap_slider()
 
     register_post_type('slider', $args);
 }
+
+
+
+add_filter('woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby');
+
+function woocommerce_shortcode_products_orderby($args)
+{
+
+    $standard_array = array('menu_order', 'title', 'date', 'rand', 'id');
+
+    if (isset($args['orderby']) && !in_array($args['orderby'], $standard_array)) {
+        $args['meta_key'] = $args['orderby'];
+        $args['orderby']  = 'meta_value_num';
+    }
+
+    return $args;
+}
+
+
+
+// Creating the widget 
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require 'vendor/autoload.php';
+}
+
+// Load the Guzzle Library
+use GuzzleHttp\Client;
+
+class wpb_widget_weather extends WP_Widget
+{
+
+    function __construct()
+    {
+        parent::__construct(
+
+            // Base ID of your widget
+            'wpb_widget_weather',
+
+            // Widget name will appear in UI
+            __('wpb_widget_weather', 'wpb_widget_weather_domain'),
+
+            // Widget description
+            array('description' => __('Widget For Weather', 'wpb_widget_weather_domain'),)
+        );
+    }
+
+    // Creating widget front-end
+
+    public function widget($args, $instance)
+    {
+
+        $title = apply_filters('widget_title', $instance['title']);
+
+        // before and after widget arguments are defined by themes
+        echo $args['before_widget'];
+        if (!empty($title))
+            echo $args['before_title'] . $title . $args['after_title'];
+
+        // This is where you run the code and display the output
+        $client = new Client(array(
+            'base_uri' => 'http://api.openweathermap.org/data/2.5/'
+        ));
+        $response = $client->request('GET', 'weather', [
+            'query' => [
+                'q' => $instance['title'],
+                'units' => 'metric', // For units in celsius
+                'APPID' => 'f7fa6f337dace74a4ebf474c11134ec6'
+            ]
+        ]);
+
+        $payload = $response->getBody()->getContents();
+        $weather_data = json_decode($payload);
+        // echo sprintf('<p>%s, UK</p>', $weather_data->name); // City name
+        echo sprintf($weather_data->name); // City name
+
+
+
+        $current = $weather_data->weather[0];
+        //https://openweathermap.org/weather-conditions
+        // $icon_class = wep_get_class_from_icon( $current->icon );
+
+        echo sprintf('<p>%d%s <span class="format">C</span></p>', $weather_data->main->temp, '&#186;');
+        echo sprintf('<p>%s</p>', $current->main);   // Current weather name
+        echo sprintf('<p>%s %s</p>', date('l'), date('H:i', strtotime('+ 1 hour')));   // Current day and time
+
+
+        echo $args['after_widget'];
+    }
+
+
+
+
+    // Widget Backend 
+    public function form($instance)
+    {
+
+        if (isset($instance['title'])) {
+            $title = $instance['title'];
+        } else {
+            $title = __('New title', 'cw_widget_domain');
+        }
+        // Widget admin form
+?>
+        <label for="<?php
+                    echo $this->get_field_id('title');
+                    ?>"><?php
+        _e('Title:');
+    ?>
+            <input class="widefat" id="<?php
+                                        echo $this->get_field_id('title');
+                                        ?>" name="<?php
+            echo $this->get_field_name('title');
+            ?>" type="text" value="<?php
+                        echo esc_attr($title);
+                        ?>" />
+    <?php
+
+
+
+
+    }
+
+
+    // Updating widget replacing old instances with new
+    public function update($new_instance, $old_instance)
+    {
+        $instance = array();
+        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
+        return $instance;
+    }
+
+    // Class wpb_widget_weather ends here
+}
+
+
+// Register and load the widget
+function wpb_load_widget()
+{
+    register_widget('wpb_widget_weather');
+}
+add_action('widgets_init', 'wpb_load_widget');

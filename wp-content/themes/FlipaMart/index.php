@@ -1668,6 +1668,7 @@
 					<!-- ============================================== BLOG SLIDER : END ============================================== -->
 
 					<!-- ============================================== FEATURED PRODUCTS ============================================== -->
+		
 					<section class="section wow fadeInUp new-arriavls">
 						<h3 class="section-title">New Arrivals</h3>
 						<div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
