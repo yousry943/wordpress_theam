@@ -1,0 +1,819 @@
+2021-04-04T08:46:45+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-04-04T09:14:08+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 371
+
+2021-04-04T09:15:14+00:00 CRITICAL syntax error, unexpected token ";" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 374
+
+2021-04-04T09:15:15+00:00 CRITICAL syntax error, unexpected token ";" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 374
+
+2021-04-04T09:15:44+00:00 CRITICAL syntax error, unexpected token ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 374
+
+2021-04-04T09:16:37+00:00 CRITICAL syntax error, unexpected token ")" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 373
+
+2021-04-04T09:46:00+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET http://api.openweathermap.org/data/2.5/weather?q=Bristol%2Cuk&units=metric&APPID=YOUR_API_KEY` resulted in a `401 Unauthorized` response:
+{"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}
+ in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\promises\src\Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\guzzle\src\Client.php(182): GuzzleHttp\Promise\Promise->wait()
+#10 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(98): GuzzleHttp\Client->request('GET', 'weather', Array)
+#11 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\template.php(1389): wep_render_dashboard_widget_contents('', Array)
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\dashboard.php(256): do_meta_boxes(Object(WP_Screen), 'normal', '')
+#13 C:\xampp\htdocs\wordpress_theam\wp-admin\index.php(181): wp_dashboard()
+#14 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php on line 113
+
+2021-04-04T09:51:39+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:51:39+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:51:56+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:52:27+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:53:40+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:53:57+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:54:28+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:55:41+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:55:58+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:56:29+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:57:42+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T09:58:30+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:00:31+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:02:32+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:04:33+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:06:34+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:08:35+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:10:36+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:12:37+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:14:38+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:16:39+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:18:40+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:20:41+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:22:42+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:24:43+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:26:44+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:28:45+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:30:46+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:32:47+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:34:48+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:36:49+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:38:50+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:40:51+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:42:52+00:00 CRITICAL Uncaught Error: Class "wep_render_dashboard_widget_contents" not found in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(115): WP_Widget_Factory->register('wep_render_dash...')
+#1 C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\weatherpress_dashboard.php(132): register_widget('wep_render_dash...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): cw_load_widget('')
+#3 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress_theam\wp-includes\widgets.php(1799): do_action('widgets_init')
+#6 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#7 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress_theam\wp-settings.php(560): do_action('init')
+#10 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget-factory.php on line 61
+
+2021-04-04T10:48:14+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:394
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 394
+
+2021-04-04T10:52:57+00:00 CRITICAL Cannot declare class wpb_widget_weather, because the name is already in use in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 341
+
+2021-04-04T10:56:21+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 390
+
+2021-04-04T10:56:23+00:00 CRITICAL syntax error, unexpected token "}" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 390
+
+2021-04-04T10:56:40+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:388
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 388
+
+2021-04-04T10:57:31+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:388
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 388
+
+2021-04-04T10:58:51+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:388
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 388
+
+2021-04-04T11:00:04+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:388
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 388
+
+2021-04-04T11:01:40+00:00 CRITICAL syntax error, unexpected token "use" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 391
+
+2021-04-04T11:02:36+00:00 CRITICAL syntax error, unexpected token "use" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 391
+
+2021-04-04T11:03:27+00:00 CRITICAL Uncaught Error: Class "Client" not found in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:388
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 388
+
+2021-04-04T11:05:02+00:00 CRITICAL syntax error, unexpected token "use" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 394
+
+2021-04-04T11:05:03+00:00 CRITICAL syntax error, unexpected token "use" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 394
+
+2021-04-04T11:05:43+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:05:56+00:00 CRITICAL Uncaught Error: Failed opening required '/vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:06:57+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:07:04+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:07:46+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:07:56+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:08:03+00:00 CRITICAL Uncaught Error: Failed opening required '/vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:08:14+00:00 CRITICAL Uncaught Error: Failed opening required './vendor/autoload.php' (include_path='\xampp\php\PEAR') in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:342
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-settings.php(528): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(10): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 342
+
+2021-04-04T11:08:52+00:00 CRITICAL Cannot redeclare composerRequire9f99aa59b98daf5a532e3c35c3a236d0() (previously declared in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\composer\autoload_real.php:68) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\vendor\composer\autoload_real.php on line 68
+
+2021-04-04T11:09:05+00:00 CRITICAL Cannot redeclare composerRequire9f99aa59b98daf5a532e3c35c3a236d0() (previously declared in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\composer\autoload_real.php:68) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\vendor\composer\autoload_real.php on line 68
+
+2021-04-04T11:11:06+00:00 CRITICAL Cannot redeclare composerRequire9f99aa59b98daf5a532e3c35c3a236d0() (previously declared in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\weatherpress-dashboard\vendor\composer\autoload_real.php:68) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\vendor\composer\autoload_real.php on line 68
+
+2021-04-04T11:13:03+00:00 CRITICAL Uncaught Error: Object of class stdClass could not be converted to string in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php:407
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-widget.php(519): wpb_widget_weather->form(Array)
+#1 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(274): WP_Widget->form_callback(Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-admin\includes\widgets.php(60): wp_widget_control(Array, Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\widgets.php(452): wp_list_widgets()
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 407
+
+2021-04-04T11:13:36+00:00 CRITICAL Declaration of wpb_widget_weather::form() must be compatible with WP_Widget::form($instance) in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 390
+
+2021-04-04T11:17:09+00:00 CRITICAL syntax error, unexpected identifier "print_r" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 408
+
+2021-04-04T11:22:08+00:00 CRITICAL syntax error, unexpected identifier "wpb_widget_weather_domain", expecting "function" or "const" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 391
+
+2021-04-04T11:22:09+00:00 CRITICAL syntax error, unexpected identifier "wpb_widget_weather_domain", expecting "function" or "const" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 391
+
+2021-04-04T11:22:11+00:00 CRITICAL syntax error, unexpected identifier "wpb_widget_weather_domain", expecting "function" or "const" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\functions.php on line 391
+

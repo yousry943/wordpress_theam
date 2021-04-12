@@ -1,0 +1,128 @@
+2021-03-31T09:23:47+00:00 CRITICAL syntax error, unexpected identifier "number", expecting "]" in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1673
+
+2021-03-31T09:25:28+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shortcode_products() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1673
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1673
+
+2021-03-31T09:26:08+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_shortcode_products() in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php:1673
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress_theam\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress_theam\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\themes\FlipaMart\index.php on line 1673
+
+2021-03-31T09:43:38+00:00 CRITICAL syntax error, unexpected identifier "print_r", expecting "," or ";" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 296
+
+2021-03-31T09:54:11+00:00 CRITICAL syntax error, unexpected variable "$childArgs" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 290
+
+2021-03-31T10:02:09+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 329
+
+2021-03-31T10:57:51+00:00 CRITICAL syntax error, unexpected token "echo" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 315
+
+2021-03-31T10:58:27+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:314
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 314
+
+2021-03-31T12:05:43+00:00 CRITICAL Unclosed '{' on line 284 in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 351
+
+2021-03-31T12:06:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:308
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 308
+
+2021-03-31T12:10:58+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 345
+
+2021-03-31T12:11:10+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 350
+
+2021-03-31T12:16:13+00:00 CRITICAL syntax error, unexpected token "}", expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 334
+
+2021-03-31T12:28:12+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:29:26+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:29:26+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:37:39+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:37:40+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:37:40+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:37:40+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T12:40:54+00:00 CRITICAL syntax error, unexpected token "," in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 309
+
+2021-03-31T12:41:12+00:00 CRITICAL Uncaught Error: get_page_hierarchy(): Argument #1 ($pages) cannot be passed by reference in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:309
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 309
+
+2021-03-31T12:41:22+00:00 CRITICAL Uncaught Error: get_page_hierarchy(): Argument #1 ($pages) cannot be passed by reference in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:309
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 309
+
+2021-03-31T12:41:26+00:00 CRITICAL Uncaught Error: get_page_hierarchy(): Argument #1 ($pages) cannot be passed by reference in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:309
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 309
+
+2021-03-31T12:42:07+00:00 CRITICAL syntax error, unexpected identifier "get_page_hierarchy" in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 309
+
+2021-03-31T14:10:39+00:00 CRITICAL Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php:291
+Stack trace:
+#0 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(292): has_children('')
+#1 C:\xampp\htdocs\wordpress_theam\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress_theam\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress_theam\wp-admin\admin.php(259): do_action('custom-plugin-y...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\yousry-plugin\index.php on line 291
+
+2021-03-31T14:35:44+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T14:35:48+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T14:40:49+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T14:45:50+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T14:50:51+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T14:55:52+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T15:00:53+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T15:05:53+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T15:10:53+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T15:15:54+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
+2021-03-31T15:20:54+00:00 CRITICAL Maximum execution time of 299 seconds exceeded in C:\xampp\htdocs\wordpress_theam\wp-content\plugins\f4-tree\Tree\Hooks.php on line 223
+
