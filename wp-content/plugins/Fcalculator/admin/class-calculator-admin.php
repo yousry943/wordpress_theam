@@ -108,31 +108,124 @@ class Calculator_Admin
 	public function Fcalculator_menu()
 	{
 
-		add_menu_page(
-			'Fcalculator Menu', //page  title
-			'Fcalculator Menu', //menu Title
-			'manage_options',
-			'my-top-level-handle', // name of submenu
-			'Fcalculator_Menu_plugin' //call back function
-		);
-
-		add_submenu_page('my-top-level-handle', 'Form 1 ', 'Form 1', 'manage_options', 'Form1',  array($this, "Form1"));
-		add_submenu_page('my-top-level-handle', 'Form 2', 'Form 2', 'manage_options', 'Form2',  array($this, "Form2"));
-
-		add_submenu_page('my-top-level-handle', 'Form 3 ', 'Form 3', 'manage_options', 'Form3',  array($this, "Form3"));
+		
 
 
-
-		// add_menu_page("Fcalculator Menu", "Fcalculator Menu", "manage_options", "Fcalculator_Menu_plugin", array($this, "Fcalculator_Menu_plugin"));
+	 add_menu_page("Fcalculator Menu", "Fcalculator Menu", "manage_options", "Fcalculator_Menu_plugin", array($this, "WelcomePage"));
 	}
 
 
 
 
 
-	public function Form1()
+	public function WelcomePage()
 	{
-		echo "form 1 ";
+?>
+		<div class="wrap about-wrap">
+			<h1><?php _e('Welcome to My Custom Dashboard Page'); ?></h1>
+
+			<div class="about-text">
+				<?php _e('Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'); ?>
+			</div>
+
+			<h2 class="nav-tab-wrapper">
+				<div id="nav-links">
+					<a href="#!b0" class="nav-tab nav-tab-active">
+						<?php _e('Welcome'); ?>
+					</a>
+
+					<a href="#!b1" class="nav-tab nav-tab">
+						<?php _e('Step 1'); ?>
+					</a>
+					<a href="#!b2" class="nav-tab">
+						<?php _e('Step 2'); ?>
+					</a>
+					<a href="#!b3" class="nav-tab">
+						<?php _e('Step 3'); ?>
+					</a>
+				</div>
+			</h2>
+
+			<div class="changelog" id='b0'>
+				<h3><?php _e('Morbi leo risus, porta ac consectetur'); ?></h3>
+
+				<div class="feature-section images-stagger-right">
+					<img src="<?php echo esc_url(admin_url('images/screenshots/theme-customizer.png')); ?>" class="image-50" />
+					<h4><?php _e('Risus Consectetur Elit Sollicitudin'); ?></h4>
+					<p><?php _e('Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui.'); ?></p>
+
+					<h4><?php _e('Mattis Justo Purus'); ?></h4>
+					<p><?php _e('Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.'); ?></p>
+				</div>
+			</div>
+
+
+
+
+			<div class="changelog" id='b1'>
+				<h3><?php _e('Morbi leo risus, porta ac consectetur'); ?></h3>
+
+
+			</div>
+
+			<div class="changelog" id='b2'>
+				<h3> page 2 </h3>
+
+
+			</div>
+			<div class="changelog" id='b3'>
+				<h3> page 3 </h3>
+
+
+			</div>
+
+
+
+
+
+		</div>
+
+		<script type="text/javascript">
+			var links = document.getElementById('nav-links').getElementsByTagName('a');
+			for (var i = 0, link; link = links[i]; i++) {
+				link.onclick = showContent;
+				// Hide content divs by default
+				getContentDiv(link).style.display = 'none';
+			}
+			// Show the first content div
+			if (links.length > 0) showContent.apply(links[0]);
+
+			var current;
+
+			function showContent() {
+
+				// hide old content
+				if (current) current.style.display = 'none';
+
+				current = getContentDiv(this);
+				if (!current) return true;
+
+				//current.innerHTML = "This is where the xml variable content should go";
+				current.style.display = 'block';
+
+				return true;
+
+			}
+
+			function getContentDiv(link) {
+
+				var linkTo = link.getAttribute('href');
+
+				// Make sure the link is meant to go to a div
+				if (linkTo.substring(0, 2) != '#!') return;
+				linkTo = linkTo.substring(2);
+
+				return document.getElementById(linkTo);
+
+			}
+		</script>
+<?php
 	}
 
 

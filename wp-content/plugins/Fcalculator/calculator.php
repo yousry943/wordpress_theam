@@ -12,7 +12,7 @@ class Short
 		 $content = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
-		$content .= '<div class="container">';
+		$content .= '<div class="container" style=" max-width: 55% !important; ">';
 		$content .= '<h2>PIP VALUE CALCULATOR </h2>';
 		$content .= '<form method="post">';
 		$content .= '<div class="form-group">';
@@ -55,7 +55,7 @@ class Short
 		$content .= '</div>';
 		$content .= '';
 		$content .= '<hr>';
-		$content .= 'Result: <div id="Result"> </div>';
+		$content .= '<p><b>Result:</p></b> <div id="Result"> </div>';
 		$content .= '';
 	
 		$content .= '</form>';
@@ -83,7 +83,7 @@ class Short
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
 
-		$content .= '<div class="container">';
+		$content .= '<div class="container" style=" max-width: 55%  !important; ">';
 		$content .= '<h2>Margin Calculator </h2>';
 		$content .= '<form method="post">';
 		$content .= '<div class="form-group">';
@@ -148,10 +148,9 @@ class Short
 		$content .= '</div>';
 		$content .= 'Volume in Lots';
 		$content .= '<hr>';
-		$content .= 'Result: <div id="Result"> </div>';
+		$content .= '<p><b>Result:</p></b> <div id="Result"> </div> ';
 		$content .= '';
-		$content .= '<button type="submit" class="btn btn-default">Reset</button>';
-		$content .= '<button type="submit" name="submit" id="SubmitData" class="btn btn-default">Submit</button>';
+
 		$content .= '</form>';
 		$content .= '</div>';
 
