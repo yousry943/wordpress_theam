@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 
 
-                 $('#Result').text(' Pip  : ' + Reset);
+                 $('#Result').text(' Result:   ' + Reset);
 
              }
          });

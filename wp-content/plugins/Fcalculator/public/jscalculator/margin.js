@@ -39,7 +39,7 @@
                     */
 
 
-                    $('#Result').text('RequiredMargin : ' + RequiredMargin);
+                    $('#Result').text(' Result : ' + RequiredMargin);
                 }
             });
         });

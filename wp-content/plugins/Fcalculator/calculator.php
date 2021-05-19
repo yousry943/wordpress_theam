@@ -55,7 +55,7 @@ class Short
 		$content .= '</div>';
 		$content .= '';
 		$content .= '<hr>';
-		$content .= '<p><b>Result:</p></b> <div id="Result"> </div>';
+		$content .= ' <p><b id="Result">  <p></b>';
 		$content .= '';
 	
 		$content .= '</form>';
@@ -148,7 +148,8 @@ class Short
 		$content .= '</div>';
 		$content .= 'Volume in Lots';
 		$content .= '<hr>';
-		$content .= '<p><b>Result:</p></b> <div id="Result"> </div> ';
+		$content .= ' <p><b id="Result">  <p></b>';
+
 		$content .= '';
 
 		$content .= '</form>';
