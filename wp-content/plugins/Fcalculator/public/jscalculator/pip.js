@@ -26,7 +26,11 @@ $(document).ready(function () {
                  var Reset = Calculate * CurrentPrice;
                  console.log("Reset:" + Reset);
 
+  /*
+                    Example:
 
+                
+                    */
 
                  $('#Result').text(' Result:   ' + Reset);
 
