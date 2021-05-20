@@ -4,16 +4,16 @@ class Short
 {
 
 
-	function Form1()
+	function PipForm()
 	{
 
 
-		
-		 $content = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		$content = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
 		$content .= '<div class="container" style=" max-width: 55% !important; ">';
-		$content .= '<h2>PIP VALUE CALCULATOR </h2>';
+		$content .= '<h3>PIP VALUE CALCULATOR </h3>';
 		$content .= '<form method="post">';
 		$content .= '<div class="form-group">';
 		$content .= '<label for="Current Price (EURUSD)">Current Conversion Price (EURUSD):</label>';
@@ -57,7 +57,7 @@ class Short
 		$content .= '<hr>';
 		$content .= ' <p><b id="Result">  <p></b>';
 		$content .= '';
-	
+
 		$content .= '</form>';
 		$content .= '';
 		$content .= '</div>';
@@ -67,24 +67,22 @@ class Short
 
 
 
-		$content .= wp_enqueue_script('pip', plugin_dir_url(__FILE__). 'public/jscalculator/pip.js');
+		$content .= wp_enqueue_script('pip', plugin_dir_url(__FILE__) . 'public/jscalculator/pip.js');
 
 		return $content;
-		
-
 	}
 
 
 
 
-	function Form2 ()
+	function MarginForm()
 	{
 		$content = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
 
 		$content .= '<div class="container" style=" max-width: 55%  !important; ">';
-		$content .= '<h2>Margin Calculator </h2>';
+		$content .= '<h3>Margin Calculator </h3>';
 		$content .= '<form method="post">';
 		$content .= '<div class="form-group">';
 		$content .= '<label for="Current Price (EURUSD)">Current Conversion Price (EURUSD):</label>';
@@ -155,7 +153,65 @@ class Short
 		$content .= '</form>';
 		$content .= '</div>';
 
-		$content .= wp_enqueue_script('pip', plugin_dir_url(__FILE__) . 'public/jscalculator/margin.js');
+		$content .= wp_enqueue_script('margin', plugin_dir_url(__FILE__) . 'public/jscalculator/margin.js');
+		return $content;
+	}
+
+
+
+	public function Positionsize()
+	{
+		$content = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
+
+		$content .= '<div class="container" style=" max-width: 55%  !important; ">';
+		$content .= '<h3>Position Size CALCULATOR </h3>';
+		$content .= '<form method="post">';
+		$content .= '';
+		$content .= '';
+		$content .= '<div class="form-group">';
+		$content .= '<label for="AccountSize">Account Size:</label>';
+		$content .= '<input type="text" class="form-control" id="AccountSize" placeholder="10000" name="AccountSize">';
+		$content .= '</div>';
+		$content .= '';
+		$content .= '<div class="form-group">';
+		$content .= '<label for="RiskPerTrade">Risk Per Trade:</label>';
+		$content .= '<input type="text" class="form-control" id="RiskPerTrade" placeholder="10%" name="RiskPerTrade">';
+		$content .= '</div>';
+		$content .= '';
+		$content .= '';
+		$content .= '<div class="form-group">';
+		$content .= '<label for="AccountSize">Stop Loss (pips):</label>';
+		$content .= '<input type="text" class="form-control" id="StopLossInPips" placeholder="0" name="StopLossInPips">';
+		$content .= '</div>';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '<hr>';
+		$content .= '';
+		$content .= '';
+		$content .= '<p><b id="ResultStanderPositionSize">';
+		$content .= '<p>';
+		$content .= '</b>';
+		$content .= '';
+		$content .= '<p><b id="ResultMinPositionSize">';
+		$content .= '<p>';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '<p><b id="ResultMicroPositionSize">';
+		$content .= '<p>';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '';
+		$content .= '</form>';
+		$content .= '</div>';
+		$content .= '';
+		$content .= wp_enqueue_script('Positionsize', plugin_dir_url(__FILE__) . 'public/jscalculator/Positionsize.js');
 		return $content;
 	}
 }
@@ -252,6 +308,8 @@ function run_calculator()
 
 run_calculator();
 
-add_shortcode('calcForm1', array($Calculator_Admin, 'Form1'));
+add_shortcode('PipForm', array($Calculator_Admin, 'PipForm'));
 
-add_shortcode('calcForm2', array($Calculator_Admin, 'Form2'));
+add_shortcode('MarginForm', array($Calculator_Admin, 'MarginForm'));
+
+add_shortcode('Positionsize', array($Calculator_Admin, 'Positionsize'));
